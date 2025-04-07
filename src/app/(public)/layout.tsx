@@ -1,13 +1,13 @@
 import { PublicAndUserNavbar } from '@/components/PublicAndUserNavBar'
 import { PublicBookmarkController, PublicTagController } from '@/controllers'
-import { WEBSITE_NAME } from '@cfg'
+import { WEBSITE_NAME, WEBSITE_SLOGAN } from '@cfg'
 import type { Metadata } from 'next'
 import { PropsWithChildren } from 'react'
 import { PublicProvider } from './ctx'
 
 export const metadata: Metadata = {
   title: {
-    default: WEBSITE_NAME,
+    default: WEBSITE_NAME + ' - ' + WEBSITE_SLOGAN,
     template: '%s - ' + WEBSITE_NAME,
   },
 }
