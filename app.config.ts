@@ -116,6 +116,7 @@ export const Assets = {
   BOX_EMPTY_PNG: '/box-empty.png',
   LOGO_SVG: '/logo.svg',
   LOGO_NO_BG_SVG: '/logo-no-bg.svg',
+  WX_PNG: '/wx.png',
 }
 
 export const ExternalLinks = {

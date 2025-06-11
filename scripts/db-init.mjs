@@ -43,7 +43,7 @@ echo(prefix + chalk.green('✅ 数据库连接成功'))
 try {
   const dbInitialed = await testDBInitialed()
   if (dbInitialed) {
-    // echo(prefix + '已经初始化，跳过本次任务\n')
+    echo(prefix + '已经初始化，跳过本次任务\n')
   } else {
     echo(prefix + '开始数据库初始化')
     await $`pnpm drizzle-kit generate`

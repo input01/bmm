@@ -3,12 +3,13 @@ import { TagPickerBox } from '@/components/common'
 import ReInput from '@/components/re-export/ReInput'
 import { useOnClickTag } from '@/hooks/useOnClickTag'
 import { testTagNameOrPinyin } from '@/utils'
-import { IconNames } from '@cfg'
+import { IconNames, Assets } from '@cfg'
 import { Kbd, ScrollShadow, Switch, cn } from '@heroui/react'
 import { useMount, useSetState, useUpdateEffect } from 'ahooks'
 import { isEqual } from 'lodash'
 import { CSSProperties, useLayoutEffect, useRef } from 'react'
 import { useHomePageContext } from '../ctx'
+import Image from 'next/image'
 
 interface Props {
   className?: string
@@ -113,6 +114,12 @@ export default function TagPicker(props: Props) {
           <div className="pb-4 text-xs text-foreground-300">
             点击标签时，按住 <Kbd className="scale-80 opacity-80" keys={['alt']} />{' '}
             可多选，实现交叉筛选书签
+          </div>
+          <div className="pb-4 text-xs text-foreground-300">
+            <Image alt="微信: selfupdated" src={Assets.WX_PNG} width={128} height={128} />
+          </div>
+          <div className="pb-4 text-xs text-foreground-300">
+            <a href="https://beian.miit.gov.cn" target="_blank"></a>
           </div>
         </>
       )}

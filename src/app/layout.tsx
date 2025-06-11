@@ -50,6 +50,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
           <AntdRegistry>{children}</AntdRegistry>
         </GlobalProvider>
       </body>
+      <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=KkX47Vq1GxA35VKs&ck=KkX47Vq1GxA35VKs&autoTrack=true&hashMode=true&screenRecord=true"></script>
     </html>
   )
 }
